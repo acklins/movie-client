@@ -1,4 +1,4 @@
-const urlMovies = "http://localhost:4000/api/movies";
+const urlMovies = "https://beluga-movie-api.herokuapp.com/api/movies";
 
 class MovieModel {
   static index = () => {
