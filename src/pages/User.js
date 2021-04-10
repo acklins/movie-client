@@ -9,11 +9,11 @@ class User extends Component {
         <h1>Hurray you made it!</h1>
         <h1> Sign Up</h1>
         <SignUp history={this.props.history} />
-        <h2>During this period</h2>
-        <h2>in our lifetime we all need to</h2>
-        <h2>keep our spirits positive and</h2>
-        <h2>have a laugh ready :-)</h2>
-        <h2>Join us for a movie a day!</h2>
+        <h3>During this period</h3>
+        <h3>in our lifetime we all need to</h3>
+        <h3>keep our spirits positive and</h3>
+        <h3>have a laugh ready :-)</h3>
+        <h3>Join us for a movie a day!</h3>
       </div>
     );
   }

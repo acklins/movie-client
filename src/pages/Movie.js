@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import AddMovieForm from "../components/Forms/AddMovieForm";
-// import User from "../components/User";
+import Name from "../components/Name";
 
-const API_KEY = "?api_key=38146de16baac87de16a3e6d99a6d85a";
+const API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
+// const API_KEY = "?api_key=38146de16baac87de16a3e6d99a6d85a";
 const ROOT_URL = "https://api.themoviedb.org/3/search/movie";
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
@@ -12,17 +13,22 @@ class Movie extends Component {
     movieList: [],
     user: {},
   };
+
   componentDidMount() {
     console.log("props", this.props);
-    const userData = this.props.location.state.newUserData;
+    const userData = this.props?.location?.state?.newUserData;
     if (userData) {
-      this.setState({ user: userData });
+      this.setState({ user: userData, updatedName: userData.name });
+    } else {
+      this.props.history.push("/");
     }
   }
+
   handleChange = (event) => {
     const movieToSearch = event.target.value;
     this.setState({ movieToSearch });
   };
+
   handleSubmit = () => {
     const { movieToSearch } = this.state;
 
@@ -38,28 +44,22 @@ class Movie extends Component {
         this.setState({ movieList });
       });
   };
+
+  removeMovie = () => {
+    this.setState({ movieList: [] });
+  };
+
   render() {
     const { movieToSearch } = this.state;
     let image;
     if (this.state.movieList.length > 0) {
       image = `${IMAGE_URL}${this.state.movieList[0].poster_path}`;
     }
+
     return (
       <>
-        <div className="about">
-          <p>
-            <h1>
-              {" "}
-              Welcome {this.state.user.name
-                ? this.state.user.name
-                : "Onetta"}{" "}
-            </h1>
-            {/* <User /> */}
-            {/* <button onClick={this.editUserHandler}>Edit</button> */}
-            {/* <button onClick={this.removeUserHandler}>Remove</button>  */}
-          </p>
-        </div>
-        <div>
+        <Name user={this.state.user} />
+        <div style={{ marginBottom: ".5em" }}>
           <label htmlFor="movieInput">Search for Movies</label>
           <input
             id="movieInput"
@@ -71,13 +71,14 @@ class Movie extends Component {
         </div>
         {this.state.movieList.length > 0 && (
           <div style={{ display: "flex", width: "80%", margin: "auto" }}>
-            <img src={image} />
+            <img src={image} style={{ marginRight: ".75em" }} />
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <p>{this.state.movieList[0].original_title}</p>
+              <h3>{this.state.movieList[0].original_title}</h3>
               <AddMovieForm
                 movie={this.state.movieList[0]}
                 userId={this.state.user._id}
               />
+              <button onClick={this.removeMovie}>Remove</button>
             </div>
           </div>
         )}

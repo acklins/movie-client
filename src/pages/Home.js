@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MovieModel from "../models/movie";
 
-const API_KEY = "?api_key=38146de16baac87de16a3e6d99a6d85a";
+const API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
+// const API_KEY = "?api_key=38146de16baac87de16a3e6d99a6d85a";
 const ROOT_URL = "https://api.themoviedb.org/3/search/movie";
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
@@ -36,8 +37,9 @@ class Home extends Component {
     return (
       <div>
         <nav>
-          <Link to={"/user"}>Sign Up</Link>
-          <Link to={"/movie"}>Movies</Link>
+          <Link to={"/user"} style={{ marginRight: ".75em" }}>
+            Sign Up
+          </Link>
         </nav>
         <h2>One of My Favorite Things during the pandemic, Movies!</h2>
         <h1>Welcome to the movieApp</h1>

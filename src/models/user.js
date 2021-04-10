@@ -45,3 +45,5 @@ class UserModel {
       .catch((err) => console.log("destroy function in user api", err));
   };
 }
+
+export default UserModel;
