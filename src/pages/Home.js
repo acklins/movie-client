@@ -11,15 +11,12 @@ class Home extends Component {
     movieToSearch: "",
     movieList: [],
   };
-
   handleChange = (event) => {
     const movieToSearch = event.target.value;
     this.setState({ movieToSearch });
   };
-
   handleSubmit = () => {
     const { movieToSearch } = this.state;
-
     fetch(
       `${ROOT_URL}${API_KEY}&language=en-US&query=${movieToSearch}&page=1&include_adult=false`
     )
@@ -39,7 +36,7 @@ class Home extends Component {
     return (
       <div>
         <nav>
-          <Link to={"/user"}>Sign In</Link>
+          <Link to={"/user"}>Sign Up</Link>
           <Link to={"/movie"}>Movies</Link>
         </nav>
         <h2>One of My Favorite Things during the pandemic, Movies!</h2>

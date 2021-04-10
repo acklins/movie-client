@@ -45,5 +45,4 @@ class MovieModel {
       .catch((err) => console.log("destroy function in movie api", err));
   };
 }
-
 export default MovieModel;

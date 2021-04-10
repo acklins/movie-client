@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AddMovieForm from "../components/Forms/AddMovieForm";
-// import EditMovieForm from "../components/Forms/EditMovieForm";
+// import User from "../components/User";
 
 const API_KEY = "?api_key=38146de16baac87de16a3e6d99a6d85a";
 const ROOT_URL = "https://api.themoviedb.org/3/search/movie";
@@ -44,7 +44,6 @@ class Movie extends Component {
     if (this.state.movieList.length > 0) {
       image = `${IMAGE_URL}${this.state.movieList[0].poster_path}`;
     }
-
     return (
       <>
         <div className="about">
@@ -55,6 +54,9 @@ class Movie extends Component {
                 ? this.state.user.name
                 : "Onetta"}{" "}
             </h1>
+            {/* <User /> */}
+            {/* <button onClick={this.editUserHandler}>Edit</button> */}
+            {/* <button onClick={this.removeUserHandler}>Remove</button>  */}
           </p>
         </div>
         <div>
@@ -79,26 +81,7 @@ class Movie extends Component {
             </div>
           </div>
         )}
-        {/* <button onClick={this.editMovieHandler}>Edit</button> */}
-        {/* <button onClick={this.removeMovieHandler}>Remove</button> */}
       </>
-      /* <div>
-          <label htmlFor="movieInput">Search for Movies</label>
-          <input
-            id="movieInput"
-            type="text"
-            value={movieToSearch}
-            onChange={this.handleChange}
-          />
-          <button onClick={this.addMovieHandler}>Add</button>
-        </div>
-        {this.state.movieList.length > 0 && (
-          <div style={{ display: "flex", width: "80%", margin: "auto" }}>
-            <img src={image} />
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <p>{this.state.movieList[2].original_title}</p>
-              does that add 2 movies [2]???????
-            </div> */
     );
   }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import AddUserForm from "../components/Forms/AddUserForm";
-import FindUserForm from "../components/Forms/FindUserForm";
+import SignUp from "../components/Forms/SignUp";
 
 class User extends Component {
   render() {
@@ -9,10 +8,7 @@ class User extends Component {
       <div>
         <h1>Hurray you made it!</h1>
         <h1> Sign Up</h1>
-        <AddUserForm history={this.props.history} />
-
-        <h1>Log In</h1>
-        <FindUserForm history={this.props.history} />
+        <SignUp history={this.props.history} />
         <h2>During this period</h2>
         <h2>in our lifetime we all need to</h2>
         <h2>keep our spirits positive and</h2>
@@ -22,5 +18,4 @@ class User extends Component {
     );
   }
 }
-
 export default User;

@@ -2,7 +2,7 @@ import React from "react";
 import UserModel from "../../models/user";
 const urlUsers = "http://localhost:4000/api/users";
 
-class AddUserForm extends React.Component {
+class SignUp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -86,4 +86,4 @@ class AddUserForm extends React.Component {
     );
   }
 }
-export default AddUserForm;
+export default SignUp;
