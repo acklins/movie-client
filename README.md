@@ -34,15 +34,15 @@ Second click the client link\
 
 ## User Stories
 
-A user can search for movies.
+- A user can search for movies.
 
-A user can click the sign up link,\
-navigate to the sign up page and sign up.
+- A user can click the sign up link,\
+  navigate to the sign up page and sign up.
 
-A user can edit their name on the sign up page.
+- A user can edit their name on the sign up page.
 
-A user can click the movie link, see a welcome message,\
-search for a movie, add a movie and remove the movie.
+- A user can click the movie link, see a welcome message,\
+  search for a movie, add a movie and remove the movie.
 
 ## Wireframes:
 
@@ -62,7 +62,7 @@ search for a movie, add a movie and remove the movie.
 
 ![atlas & vscode view](src/images/dbCRUD.png)
 
-## Entity Relationship Diagrams
+## Entity Relationship Diagram
 
 2 Collections
 ![collections](src/images/Collections.png)
