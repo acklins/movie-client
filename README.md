@@ -30,7 +30,9 @@ Second click the client link\
 
 ## Index:
 
-[deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [User Stories](#user-stories)
+- [Wireframes](#wireframes)
+- [Entity Relationship Diagram](#entity-relationship-diagram)
 
 ## User Stories
 
