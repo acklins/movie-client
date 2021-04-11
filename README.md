@@ -69,18 +69,18 @@ search for a movie, add a movie and remove the movie.
 
 ### Future features
 
-1. Full crud on both collections, on internal api and external api.\
+1. Full crud on both collections, on internal api and external api.
 
-2. Movie soundtrack playing on landing page.\
+2. Movie soundtrack playing on landing page.
 
-3. i18n tabs for Mandarin, Norwegian, Japanese & Spanish.\
+3. i18n tabs for Mandarin, Norwegian, Japanese & Spanish.
 
-4. Build the app in React Native.\
+4. Build the app in React Native.
 
-5. Complete authentication build out.\
+5. Complete authentication build out.
 
-6. Create test documention for Manual QA Engineers.\
+6. Create test documention for Manual QA Engineers.
 
-7. Create Automation tests for Automation Test Engineers.\
+7. Create Automation tests for Automation Test Engineers.
 
 8. Create unit tests for (SDET) Software Development Engineers in Test.
