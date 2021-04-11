@@ -56,9 +56,16 @@ search for a movie, add a movie and remove the movie.
 
 ### Movie Page
 
-### DB crud view
+![movie & user crud page](src/images/MoviePage.png)
+
+### DB crud interface
+
+![atlas & vscode view](src/images/dbCRUD.png)
 
 ## Entity Relationship Diagrams
+
+2 Collections
+![atlas & vscode view](src/images/dbCRUD.png)
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
