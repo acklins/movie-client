@@ -14,10 +14,11 @@ Express\
 React\
 Node\
 CSS\
-Button Gennerator\
+Button Generator
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation steps
+
+Launch this server link in your browser [server link](https://beluga-movie-api.herokuapp.com/api/users) .
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
