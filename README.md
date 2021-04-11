@@ -28,18 +28,16 @@ Second click the client link\
 
 ## Index:
 
-:: marker
-
 [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## User Stories
 
-A user can search for movies.\
+A user can search for movies.
 
 A user can click the sign up link,\
-navigate to the sign up page and sign up.\
+navigate to the sign up page and sign up.
 
-A user can edit their name on the sign up page.\
+A user can edit their name on the sign up page.
 
 A user can click the movie link, see a welcome message,\
 search for a movie, add a movie and remove the movie.
