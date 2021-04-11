@@ -7,11 +7,14 @@ their name, add a movie to the page and remove a movie.
 
 Heroku link to the hosted working app [beluga movie client](https://beluga-movie-client.herokuapp.com/).
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
-
-### `npm start`
+Mongo\
+Express\
+React\
+Node\
+CSS\
+Button Gennerator\
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
