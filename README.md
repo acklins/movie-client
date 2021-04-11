@@ -65,7 +65,7 @@ search for a movie, add a movie and remove the movie.
 ## Entity Relationship Diagrams
 
 2 Collections
-![collections](src/images/2 Collections.png)
+![collections](src/images/Collections.png)
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
