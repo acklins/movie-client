@@ -15,6 +15,8 @@ Mongo\
 Express\
 React\
 Node\
+VS Code\
+MongoDB Atlas\
 CSS\
 Button Generator
 
@@ -41,6 +43,22 @@ A user can edit their name on the sign up page.
 
 A user can click the movie link, see a welcome message,\
 search for a movie, add a movie and remove the movie.
+
+## Wireframes:
+
+### Landing Page
+
+![movie home page](/images/MovieLanding.png)
+
+### Sign Up
+
+![movie sing up page](/images/MovieSignUp.png)
+
+### Movie Page
+
+### DB crud view
+
+## Entity Relationship Diagrams
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
