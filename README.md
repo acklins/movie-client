@@ -2,10 +2,10 @@
 
 Movie App is a search engine that allows a user to search for movies.\
 During the pandemic we all need to continually keep a positive spirit.\
-Movie App is a very simple App that allows a user to sign up, edit \
+Movie App is a very simple app that allows a user to sign up, edit \
 their name, add a movie to the page and remove a movie.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Heroku link to the hosted working app [beluga movie client](https://beluga-movie-client.herokuapp.com/).
 
 ## Available Scripts
 
