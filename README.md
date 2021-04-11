@@ -48,11 +48,11 @@ search for a movie, add a movie and remove the movie.
 
 ### Landing Page
 
-![movie home page](/images/MovieLanding.png)
+![movie home page](src/images/MovieLanding.png)
 
 ### Sign Up
 
-![movie sing up page](/images/MovieSignUp.png)
+![movie sing up page](src/images/MovieSignUp.png)
 
 ### Movie Page
 
